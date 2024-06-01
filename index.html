@@ -1,1 +1,114 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What you want from me ?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #82FA58;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+        .pricing {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        .pricing h2 {
+            margin-top: 0;
+        }
+        .pricing table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .pricing table, .pricing th, .pricing td {
+            border: 1px solid #ddd;
+        }
+        .pricing th, .pricing td {
+            padding: 1rem;
+            text-align: left;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>See for yourself</h1>
+        <h2>And message me on instagram : @hug.tof</h2>
+    </header>
+    <div class="container">
+        <section class="gallery">
+            <img src="Images\Vélo.jpg" alt="Vélo">
+            <img src="Images\Montagne.jpg" alt="Montagne">
+            <img src="Images\Wheeling.jpg" alt="Wheeling">
+            <img src="Images\Main.jpg" alt="Main">
+            <img src="Images\Porsche.jpg" alt="Porsche">            
+            <img src="Images\Jantes.jpg" alt="Jantes">
+            <img src="Images\Phares.jpg" alt="Phares">
+        </section>
+        <section class="pricing">
+            <h2>Grille Tarifaire</h2>
+            <table>
+                <tr>
+                    <th>Prestation</th>
+                    <th>Prix</th>
+                </tr>
+                <tr>
+                    <td>Déplacement</td>
+                    <td>0.50€/km</td>
+                </tr>
+                <tr>
+                    <td>Shooting portrait</td>
+                    <td>Selon projet ~ 50€ / 150€</td>
+                </tr>
+                <tr>
+                    <td>Shooting véhicules</td>
+                    <td>250€</td>
+                </tr>
+                <tr>
+                    <td>Demande particulière</td>
+                    <td>Selon projet</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 @hug.tof Tous droits réservés.</p>
+    </div>
+</body>
+</html>
