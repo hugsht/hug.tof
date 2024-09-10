@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De quoi as-tu besoin ?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #86772D;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .content {
+            background-color: #ddd;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content img {
+            float: left;
+            width: 300px;
+            height: auto;
+            margin-right: 2rem;
+            border-radius: 10px;
+        }
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Regarde</h1>
+        <h2>Envoie-moi un message sur Instagram : <a href="https://www.instagram.com/hug.tof">@hug.tof</a></h2>
+    </header>
+    <div class="container">
+        <section class="content">
+            <a href="Images/Photographe1.jpg" target="_blank"><img src="Images/Photographe1.jpg" alt="Photographe1"></a>
+            <p>Portrait</p>
+            <p>Après avoir photographié tous les arbres et toutes les fleurs du jardin de ma mère, j'ai cherché d'autres sujets à capturer.</p>
+            <p>J'ai alors commencé à prendre ma famille et mes amis en photos.</p>
+            <p>De là est née ma passion pour le portrait, avec un style en perpétuel renouveau depuis mes débuts.</p>
+            <p>N'hésitez pas à me proposer vos projets de shootings, me demander des photos pour  CV ou autres et à me faire part de toutes vos idées !</p>
+            <p>À bientôt !</p>
+        </section>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 @hug.tof  Tous droits réservés.</p>
+        <p>SIREN : 929 072 619</p>
+    </div>
+</body>
+</html>
