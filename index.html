@@ -6,64 +6,130 @@
     <title>De quoi as-tu besoin ?</title>
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            color: #333;
+        @media screen and (orientation: landscape) {
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                color: #333;
+            }
+            header {
+                background-color: #86772D ;
+                color: #fff;
+                text-align: center;
+                padding: 2rem 0;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 3rem;
+            }
+            .container {
+                padding: 2rem;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1rem;
+            }
+            .gallery img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 10px;
+            }
+            .pricing {
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-top: 2rem;
+            }
+            .pricing h2 {
+                margin-top: 0;
+            }
+            .pricing table {
+                width: 100%;
+                border-collapse: collapse;
+                padding: 1rem;
+            }
+            .pricing table, .pricing th, .pricing td {
+                border: 1px solid #ddd;
+            }
+            .pricing th, .pricing td {
+                padding: 1rem;
+                text-align: left;
+            }
+            .footer {
+                text-align: center;
+                padding: 2rem 0;
+                background-color: #333;
+                color: #fff;
+                margin-top: 2rem;
+            }  
         }
-        header {
-            background-color: #86772D ;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
-        .container {
-            padding: 2rem;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 10px;
-        }
-        .pricing {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 2rem;
-        }
-        .pricing h2 {
-            margin-top: 0;
-        }
-        .pricing table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .pricing table, .pricing th, .pricing td {
-            border: 1px solid #ddd;
-        }
-        .pricing th, .pricing td {
-            padding: 1rem;
-            text-align: left;
-        }
-        .footer {
-            text-align: center;
-            padding: 2rem 0;
-            background-color: #333;
-            color: #fff;
-            margin-top: 2rem;
+        @media screen and (orientation: portrait){
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                color: #333;
+            }
+            header {
+                background-color: #86772D ;
+                color: #fff;
+                text-align: center;
+                padding: 2rem 0;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 3rem;
+            }
+            .container {
+                padding: 2rem;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1rem;
+            }
+            .gallery img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 10px;
+            }
+            .pricing {
+                background-color: #fff;
+                padding: 1rem;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-top: 2rem;
+            }
+            .pricing h2 {
+                margin-top: 0;
+                text-align: center;
+            }
+            .pricing table {
+                width: 100%;
+                border-collapse: collapse;
+                padding: 1rem;
+            }
+            .pricing table, .pricing th, .pricing td {
+                border: 1px solid #ddd;
+            }
+            .pricing th, .pricing td {
+                padding: 1rem;
+                text-align: left;
+            }
+            .footer {
+                text-align: center;
+                padding: 2rem 0;
+                background-color: #333;
+                color: #fff;
+                margin-top: 2rem;
+            }
         }
     </style>
 </head>
