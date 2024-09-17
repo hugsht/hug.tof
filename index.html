@@ -30,11 +30,8 @@
             .gallery {
                 display: grid;
                 grid-auto-rows: auto;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 gap: 1rem;
-            }
-            .gallery:nth-child(n+5):nth-child(-n+7), .gallery:nth-child(n+8):nth-child(-n+10) {
-                grid-column: span 4;
             }
             .gallery img {
                 width: 100%;
@@ -153,9 +150,13 @@
             <a href="Images/SurLePont.jpg" target="_blank"><img src="Images/SurLePont.jpg" alt="SurLePont"></a>
             <a href="Images/Duke.jpg" target="_blank"><img src="Images/Duke.jpg" alt="Duke"></a>
             <a href="Images/Ducati.jpg" target="_blank"><img src="Images/Ducati.jpg" alt="Ducati"></a>
+        </section>
+        <section class="gallery">
             <a href="Images/Jantes.jpg" target="_blank"><img src="Images/Jantes.jpg" alt="Jantes"></a>
             <a href="Images/Phares.jpg" target="_blank"><img src="Images/Phares.jpg" alt="Phares"></a>
             <a href="Images/FeuDeForet.jpg" target="_blank"><img src="Images/FeuDeForet.jpg" alt="FeuDeForet"></a>
+        </section>
+        <section class="gallery">
             <a href="Images/Photographe3.jpg" target="_blank"><img src="Images/Photographe3.jpg" alt="Photographe2"></a>
             <a href="Images/Shelby.jpg" target="_blank"><img src="Images/Shelby.jpg" alt="Shelby"></a>
             <a href="Images/Grenouille.jpg" target="_blank"><img src="Images/Grenouille.jpg" alt="Grenouille"></a>
