@@ -65,7 +65,10 @@
                 text-align: left;
             }
             .pricing td:nth-child(1) {
-                padding-right: 3rem; /* Ajoute un grand espace uniquement pour cette colonne */
+                padding-right: 3rem;
+            }
+            .small-font{
+                font-size: inherit;
             }
             .footer {
                 text-align: center;
@@ -122,6 +125,7 @@
             }
             .pricing table {
                 width: 100%;
+                display: block;
                 border-collapse: collapse;
             }
             .pricing table, .pricing th, .pricing td {
@@ -130,6 +134,9 @@
             .pricing th, .pricing td {
                 padding: 0.8rem;
                 text-align: left;
+            }
+            .small-font{
+                font-size: 0.75rem;
             }
             .footer {
                 text-align: center;
@@ -170,15 +177,15 @@
                     <th>Shooting</th>
                     <th>Prix</th>
                 </tr>
-                <tr>
+                <tr class="small-font">
                     <td><a href="Vehicule.html" target="_blank">Véhicule</a> / <a href="Portrait.html" target="_blank">Portrait</a></td>
                     <td>Selon projet ~ 50€ / 5 photos</td>
                 </tr>
-                <tr>
+                <tr class="small-font">
                     <td><a href="Produit.html" target="_blank">Produit</a></td>
                     <td>Selon projet ~ 100€ / 5 photos</td>
                 </tr>
-                <tr>
+                <tr class="small-font">
                     <td><a href="Autre.html" target="_blank">Demande particulière</a></td>
                     <td>Selon demande</td>
                 </tr>
@@ -186,11 +193,11 @@
                     <th>Déplacement</th>
                     <th>Prix</th>
                 </tr>
-                <tr>
+                <tr class="small-font">
                     <td>Depuis Fontaine, 38600</td>
                     <td>Gratuit dans une zone de 20kms</td>
                 </tr>
-                <tr>
+                <tr class="small-font">
                     <td>A partir de 20kms</td>
                     <td>2€ par tranche de 5kms (ex : 10€ pour 55kms, 50€ pour 145kms)</td>
                 </tr>
