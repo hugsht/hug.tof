@@ -6,7 +6,7 @@
     <title>Besoin de Portrait ?</title>
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
     <style>
-        @media (orientation: landscape) {
+        /*@media (orientation: landscape) {
             body {
                 font-family: "Times New Roman", Times, serif;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -54,8 +54,16 @@
                 color: #fff;
                 margin-top: 2rem;
             }
-        }
+        }*/
         @media (orientation: portrait) {
+            header {
+                background-color: #86772D;
+                color: #fff;
+                text-align: center;
+                padding: 1.5rem 0.8rem;}
+            header h1 {
+                margin: 0;
+                font-size: 3rem;}
             body {
                 font-family: "Times New Roman", Times, serif;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -63,49 +71,32 @@
                 background-color: #f0f0f0;
                 margin: 0;
                 padding: 0;
-                color: #333;
-            }
-            header {
-                background-color: #86772D;
-                color: #fff;
-                text-align: center;
-                padding: 1.5rem 0.8rem;
-            }
-            header h1 {
-                margin: 0;
-                font-size: 3rem;
-            }
-            .container {
-                padding: 1rem;
-            }
+                color: #333;}
+                .img img{
+                margin: 5vw;
+                width: 90vw;
+                height: auto;
+                border-radius: 3vw;}
             .content {
                 background-color: #ddd;
-                padding: 1rem 1rem 1.5rem;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            .content img {
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
+                padding: 1rem;
+                padding-top: 0.5rem;
+                margin: 5vw;
+                margin-top: 0;
+                border-radius: 3vw;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
             .content h1 {
-                margin: 1rem 0 -0.4rem;
                 font-size: 1.2rem;
-                line-height: 1.4;
-            }
+                line-height: 1.4;}
             .content p {
-                margin-bottom: -0.5rem;
                 font-size: 1rem;
-                line-height: 1.4;
-            }
+                line-height: 1.4;}
             .footer {
                 text-align: center;
                 padding: 1.8rem;
                 background-color: #333;
                 color: #fff;
-                margin-top: 0;
-            }
+                margin-top: 0;}
         }
     </style>
 </head>
@@ -114,17 +105,17 @@
         <h1>Regarde</h1>
         <h2>Envoie-moi un message sur Instagram : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a></h2>
     </header>
-    <div class="container">
-        <section class="content">
-            <a href="Images/Photographe1.jpg" target="_blank"><img src="Images/Photographe1.jpg" alt="Photographe1"></a>
-            <h1>Portrait</h1>
-            <p>Après avoir photographié tous les arbres et toutes les fleurs du jardin de ma mère, j'ai cherché d'autres sujets à capturer.</p>
-            <p>Mes amis furent mes premiers cobayes puisqu'ils sont tout aussi charmants que les fleurs du jardin de ma mère.</p>
-            <p>Ils ont ainsi alimenté, depuis le début, mon amour du portrait et mon style en perpétuel renouveau.</p>
-            <p>N'hésitez pas à me proposer vos projets de shootings, me demander des photos pour CV et à me faire part de toutes vos idées !</p>
-            <p>Contactez moi : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a> !</p>
-        </section>
+    <div class="img">
+        <a href="Images/Photographe1.jpg" target="_blank"><img src="Images/Photographe1.jpg" alt="Photographe1"></a>
     </div>
+    <section class="content">
+        <h1>Portrait</h1>
+        <p>Après avoir photographié tous les arbres et toutes les fleurs du jardin de ma mère, j'ai cherché d'autres sujets à capturer.</p>
+        <p>Mes amis furent mes premiers cobayes puisqu'ils sont tout aussi charmants que les fleurs du jardin de ma mère.</p>
+        <p>Ils ont ainsi alimenté, depuis le début, mon amour du portrait et mon style en perpétuel renouveau.</p>
+        <p>N'hésitez pas à me proposer vos projets de shootings, me demander des photos pour CV et à me faire part de toutes vos idées !</p>
+        <p>Contactez moi : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a> !</p>
+    </section>
     <div class="footer">
         <p>&copy; 2024 @hug.tof  Tous droits réservés.
         <p>SIREN : 929 072 619</p>
