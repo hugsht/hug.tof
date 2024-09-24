@@ -7,6 +7,14 @@
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
     <style>
         @media (orientation: landscape) {
+            header {
+                background-color: #86772D ;
+                color: #fff;
+                text-align: center;
+                padding: 2rem 0;}
+            header h1 {
+                margin: 0;
+                font-size: 3rem;}
             body {
                 font-family: "Times New Roman", Times, serif;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -14,72 +22,58 @@
                 background-color: #f0f0f0;
                 margin: 0;
                 padding: 0;
-                color: #333;
-            }
-            header {
-                background-color: #86772D ;
-                color: #fff;
-                text-align: center;
-                padding: 2rem 0;
-            }
-            header h1 {
-                margin: 0;
-                font-size: 3rem;
-            }
-            .container {
-                padding: 1rem;
-            }
-            .gallery {
+                color: #333;}
+            .gallery4 {
                 display: grid;
-                grid-auto-rows: auto;
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 2rem;
-                margin-top: 0;
-                padding: 1rem;
-            }
-            .gallery img {
+                grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
+                grid-template-rows: auto;
+                gap: 2vw;
+                margin: 1.125vh 2vw;}
+            .gallery4 img {
                 width: 100%;
                 height: auto;
                 display: block;
-                border-radius: 10px;
-            }
+                border-radius: 10px;}
+            .gallery3 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                gap: 2vw;
+                margin: 1.125vh 2vw;}
+            .gallery3 img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 10px;}
             .pricing {
                 background-color: #fff;
                 display: inline-block;
                 padding: 2rem;
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                margin: 2rem 1rem 0;
-            }
+                margin: 2rem 1rem 0;}
             .pricing h2 {
-                margin: 0 0 2rem;
-            }
+                margin: 0 0 2rem;}
             .pricing table {
                 width: auto;
                 table-layout: auto;
-                border-collapse: collapse;
-            }
+                border-collapse: collapse;}
             .pricing table, .pricing th, .pricing td {
-                border: 1px solid #ddd;
-            }
+                border: 1px solid #ddd;}
             .pricing th, .pricing td {
                 padding: 1rem;
                 padding-right: 2rem;
-                text-align: left;
-            }
+                text-align: left;}
             .pricing td:nth-child(1) {
-                padding-right: 3rem;
-            }
+                padding-right: 3rem; }
             .small-font{
-                font-size: inherit;
-            }
+                font-size: inherit;}
             .footer {
                 text-align: center;
                 padding: 2rem 0;
                 background-color: #333;
                 color: #fff;
-                margin-top: 2rem;
-            }  
+                margin-top: 2rem;}  
         }
         @media (orientation: portrait){
             body {
@@ -101,12 +95,20 @@
                 margin: 0;
                 font-size: 3rem;
             }
-            .container {
-                padding: 0.8rem;
-                padding-top: 0;
-                padding-bottom: 0;
+            .gallery4 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 0.8rem;
+                margin-top: 0;
+                padding-top: 0.8rem;
             }
-            .gallery {
+            .gallery img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 10px;
+            }
+            .gallery3 {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 gap: 0.8rem;
@@ -160,57 +162,55 @@
         <h1>Regarde</h1>
         <h2>Envoie-moi un message sur Instagram : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a></h2>
     </header>
-    <div class="container">
-        <section class="gallery">
-            <a href="ImagesHD/Photographe1.jpg" target="_blank"><img src="ImagesLD/Photographe1.jpg" alt="Photographe1"></a>
-            <a href="ImagesHD/SurLePont.jpg" target="_blank"><img src="ImagesHD/SurLePont.jpg" alt="SurLePont"></a>
-            <a href="ImagesHD/Duke.jpg" target="_blank"><img src="ImagesHD/Duke.jpg" alt="Duke"></a>
-            <a href="ImagesHD/Ducati.jpg" target="_blank"><img src="ImagesHD/Ducati.jpg" alt="Ducati"></a>
-        </section>
-        <section class="gallery">
-            <a href="ImagesHD/Jantes.jpg" target="_blank"><img src="ImagesHD/Jantes.jpg" alt="Jantes"></a>
-            <a href="ImagesHD/Phares.jpg" target="_blank"><img src="ImagesHD/Phares.jpg" alt="Phares"></a>
-            <a href="ImagesHD/FeuDeForet.jpg" target="_blank"><img src="ImagesHD/FeuDeForet.jpg" alt="FeuDeForet"></a>
-        </section>
-        <section class="gallery">
-            <a href="ImagesHD/Photographe3.jpg" target="_blank"><img src="ImagesHD/Photographe3.jpg" alt="Photographe2"></a>
-            <a href="ImagesHD/Shelby.jpg" target="_blank"><img src="ImagesHD/Shelby.jpg" alt="Shelby"></a>
-            <a href="ImagesHD/Grenouille.jpg" target="_blank"><img src="ImagesHD/Grenouille.jpg" alt="Grenouille"></a>
-        </section>
-        <section class="pricing">
-            <h2>Grille Tarifaire</h2>
-            <table>
-                <tr>
-                    <th>Shooting</th>
-                    <th>Prix</th>
-                </tr>
-                <tr class="small-font">
-                    <td><a href="Vehicule.html" target="_self">Véhicule</a> / <a href="Portrait.html" target="_self">Portrait</a></td>
-                    <td>Selon projet ~ 50€ / 5 photos</td>
-                </tr>
-                <tr class="small-font">
-                    <td><a href="Produit.html" target="_self">Produit</a></td>
-                    <td>Selon projet ~ 100€ / 5 photos</td>
-                </tr>
-                <tr class="small-font">
-                    <td><a href="Autre.html" target="_self">Demande particulière</a></td>
-                    <td>Selon demande</td>
-                </tr>
-                <tr>
-                    <th>Déplacement</th>
-                    <th>Prix</th>
-                </tr>
-                <tr class="small-font">
-                    <td>Depuis Fontaine, 38600</td>
-                    <td>Gratuit dans une zone de 20kms</td>
-                </tr>
-                <tr class="small-font">
-                    <td>A partir de 20kms</td>
-                    <td>2€ par tranche de 5kms (ex : 10€ pour 55kms, 50€ pour 145kms)</td>
-                </tr>
-            </table>
-        </section>
-    </div>
+    <section class="gallery4">
+        <a href="ImagesHD/Photographe1.jpg" target="_blank"><img src="ImagesLD/Photographe1.jpg" alt="Photographe1"></a>
+        <a href="ImagesHD/SurLePont.jpg" target="_blank"><img src="ImagesHD/SurLePont.jpg" alt="SurLePont"></a>
+        <a href="ImagesHD/Duke.jpg" target="_blank"><img src="ImagesHD/Duke.jpg" alt="Duke"></a>
+        <a href="ImagesHD/Ducati.jpg" target="_blank"><img src="ImagesHD/Ducati.jpg" alt="Ducati"></a>
+    </section>
+    <section class="gallery3">
+        <a href="ImagesHD/Jantes.jpg" target="_blank"><img src="ImagesHD/Jantes.jpg" alt="Jantes"></a>
+        <a href="ImagesHD/Phares.jpg" target="_blank"><img src="ImagesHD/Phares.jpg" alt="Phares"></a>
+        <a href="ImagesHD/FeuDeForet.jpg" target="_blank"><img src="ImagesHD/FeuDeForet.jpg" alt="FeuDeForet"></a>
+    </section>
+    <section class="gallery3">
+        <a href="ImagesHD/Photographe3.jpg" target="_blank"><img src="ImagesHD/Photographe3.jpg" alt="Photographe2"></a>
+        <a href="ImagesHD/Shelby.jpg" target="_blank"><img src="ImagesHD/Shelby.jpg" alt="Shelby"></a>
+        <a href="ImagesHD/Grenouille.jpg" target="_blank"><img src="ImagesHD/Grenouille.jpg" alt="Grenouille"></a>
+    </section>
+    <section class="pricing">
+        <h2>Grille Tarifaire</h2>
+        <table>
+            <tr>
+                <th>Shooting</th>
+                <th>Prix</th>
+            </tr>
+            <tr class="small-font">
+                <td><a href="Vehicule.html" target="_self">Véhicule</a> / <a href="Portrait.html" target="_self">Portrait</a></td>
+                <td>Selon projet ~ 50€ / 5 photos</td>
+            </tr>
+            <tr class="small-font">
+                <td><a href="Produit.html" target="_self">Produit</a></td>
+                <td>Selon projet ~ 100€ / 5 photos</td>
+            </tr>
+            <tr class="small-font">
+                <td><a href="Autre.html" target="_self">Demande particulière</a></td>
+                <td>Selon demande</td>
+            </tr>
+            <tr>
+                <th>Déplacement</th>
+                <th>Prix</th>
+            </tr>
+            <tr class="small-font">
+                <td>Depuis Fontaine, 38600</td>
+                <td>Gratuit dans une zone de 20kms</td>
+            </tr>
+            <tr class="small-font">
+                <td>A partir de 20kms</td>
+                <td>2€ par tranche de 5kms (ex : 10€ pour 55kms, 50€ pour 145kms)</td>
+            </tr>
+        </table>
+    </section>
     <div class="footer">
         <p>&copy; 2024 @hug.tof  Tous droits réservés.</p>
         <p>SIREN : 929 072 619</p>
