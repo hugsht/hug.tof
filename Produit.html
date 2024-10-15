@@ -6,49 +6,43 @@
     <title>De quoi as-tu besoin ?</title>
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
+        @media (orientation: portrait){
+            header {
             background-color: #86772D;
             color: #fff;
             text-align: center;
-            padding: 2rem 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
-        .container {
-            padding: 2rem;
-        }
-        .content {
-            background-color: #ddd;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .content img {
-            float: left;
-            width: 300px;
-            height: auto;
-            margin-right: 2rem;
-            border-radius: 10px;
-        }
-        .content p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-        .footer {
-            text-align: center;
-            padding: 2rem 0;
-            background-color: #333;
-            color: #fff;
-            margin-top: 2rem;
+            padding: 1.5rem 0.8rem;}
+            header h1 {
+                margin: 0;
+                font-size: 3rem;}
+            body {
+                font-family: "Times New Roman", Times, serif;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                color: #333;}
+            .content {
+                background-color: #ddd;
+                padding: 1rem;
+                padding-top: 0.5rem;
+                margin: 5vw;
+                margin-top: 0;
+                border-radius: 3vw;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+            .content h1 {
+                font-size: 1.2rem;
+                line-height: 1.4;}
+            .content p {
+                font-size: 1rem;
+                line-height: 1.4;}
+            .footer {
+                text-align: center;
+                padding: 1.8rem;
+                background-color: #333;
+                color: #fff;
+                margin-top: 0;}
         }
     </style>
 </head>
@@ -57,16 +51,16 @@
         <h1>Regarde</h1>
         <h2>Envoie-moi un message sur Instagram : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a></h2>
     </header>
-    <div class="container">
-        <section class="content">
-            <a href="ImagesHD/Stylo.jpg" target="_blank"><img src="ImagesHD/Stylo.jpg" alt="Stylo"></a>
-            <h1>Produit</h1>
-            <p>L'art de mettre un objet ou un ensemble d'objets en valeur.</p>
-            <p>Plutôt destiné aux entreprises, ce shooting vous permettra d'avoir de belles images d'un de vos produits.</p>
-            <p>Le tarif plus elevé est gage du soin et du temps supplémentaire en retouches accordé à ce type de photographie.</p>
-            <p>Contactez moi : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a> !</p>
-        </section>
+    <div class="img">
+        <a href="ImagesHD/Stylo.jpg" target="_blank"><img src="ImagesHD/Stylo.jpg" alt="Stylo"></a>
     </div>
+    <section class="content">
+        <h1>Produit</h1>
+        <p>L'art de mettre un objet ou un ensemble d'objets en valeur.</p>
+        <p>Plutôt destiné aux entreprises, ce shooting vous permettra d'avoir de belles images d'un de vos produits.</p>
+        <p>Le tarif plus elevé est gage du soin et du temps supplémentaire en retouches accordé à ce type de photographie.</p>
+        <p>Contactez moi : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a> !</p>
+    </section>
     <div class="footer">
         <p>&copy; 2024 @hug.tof  Tous droits réservés.</p>
         <p>SIREN : 929 072 619</p>
