@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De quoi as-tu besoin ?</title>
+    <title>Besoin d'Autre chose ?</title>
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
     <style>
+        @media (orientation: landscape) {
+            header {
+                background-color: #86772D;
+                color: #fff;
+                text-align: center;
+                padding: 2rem 0;}
+            header h1 {
+                margin: 0;
+                font-size: 3rem;}
+            body {
+                font-family: "Times New Roman", Times, serif;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                color: #333;}
+            .container{
+                display: flex;
+                align-items: flex-start;}
+            .img img {
+                margin: 2.5vw;
+                width: 22.5vw;
+                height: auto;
+                border-radius: 1vw;}
+            .content {
+                margin: 2.5vw 2.5vw 2.5vw  0;
+                background-color: #ddd;
+                width: 70vw;
+                border-radius: 1vw;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+            .content h1 {
+                margin: 3vh 2vw 2.5vh;
+                font-size: 1.4rem;
+                line-height: 1.6;}
+            .content p {
+                margin: 0 1.8vw 2.5vh;
+                font-size: 1.2rem;
+                line-height: 1.6;}
+            .footer {
+                text-align: center;
+                padding: 2rem;
+                background-color: #333;
+                color: #fff;}
+        }
         @media (orientation: portrait){
             header {
                 background-color: #86772D;
@@ -56,16 +101,18 @@
         <h1>Regarde</h1>
         <h2>Envoie-moi un message sur Instagram : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a></h2>
     </header>
-    <div class="img">
-        <a href="ImagesHD/Stylo+Etui.jpg" target="_blank"><img src="ImagesLD/Stylo+Etui.jpg" alt="Stylo+Etui"></a>
+    <div class="container">
+        <section class="img">
+            <a href="ImagesHD/Bagues3.jpg" target="_blank"><img src="ImagesLD/Bagues3.jpg" alt="3Bagues"></a>
+        </section>
+        <section class="content">
+            <h1>Demande particulière</h1>
+            <p>Vous avez un projet qui ne rentre pas dans les cases ?</p>
+            <p>Vous ne savez pas précisement ce que vous voulez ?</p>
+            <p>La meilleure solution est d'en parler ensemble !</p>
+            <p>Contactez moi : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a> !</p>
+        </section>
     </div>
-    <section class="content">
-        <h1>Demande particulière</h1>
-        <p>Vous avez un projet qui ne rentre pas dans les cases ?</p>
-        <p>Vous ne savez pas précisement ce que vous voulez ?</p>
-        <p>La meilleure solution est d'en parler ensemble !</p>
-        <p>Contactez moi : <a href="https://www.instagram.com/hug.tof" target="_blank">@hug.tof</a> !</p>
-    </section>
     <div class="footer">
         <p>@hug.tof  Tous droits réservés &copy; 2025</p>
         <p>SIREN : 929 072 619</p>
